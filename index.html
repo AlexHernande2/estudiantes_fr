@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion de estudiantes</h1>
+    </header>
+    <main>
+        <section>
+            <button id="btnRegistrar">Registrar estudiante</button>
+        </section>
+        <section>
+            <table id="estudianteTb">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3 id="titulo">IMPORTANTE: Asignar una función antes al botón guardar</h3>
+            <form>
+                <label>
+                    <span>Codigo: </span>
+                    <input type="number" maxlength="200" name="codigo" id="codigoId" required>
+                </label>
+                <label>
+                    <span>Nombre: </span>
+                    <input type="text" maxlength="150" name="nombres" id="nombreId" required>
+                </label>
+                <label>
+                    <span>Apellido: </span>
+                    <input type="text" maxlength="200" name="apellidos" id="apellidoId" required>
+                </label>
+                <section>
+                    <br>
+                    <button id="btnGuardar" type="button">Guardar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <!-- Para trabajar con jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/gestionEstudiantes.js"></script>
+</body>
+
+</html>
