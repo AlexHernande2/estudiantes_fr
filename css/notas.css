@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tituloNotas {
+    text-align: center;
+    border: 1px solid #f46565;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Ponerle bordes al texto */
+    -webkit-text-stroke: 0.3px #1f60f8;
+    background: rgba(240, 240, 240, 0.46);
+    margin-bottom: 10px;
+}
+
+.notasform {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+.actividadTb {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.actividadTb th,
+.actividadTb td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+.actividadTb th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.actividadTb tbody tr:hover {
+    background-color: #d9e9f6;
+}
+
+.notasForm {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.contenedor input {
+    width: 100%;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.btnGuardar {
+    display: flex;
+    justify-content: center;
+}
+
+.btnGuardar button {
+    background-color: #008000;
+    border: 0px;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.btnGuardar button:hover {
+    /*Para el cursor el hover*/
+    background-color: #fff;
+    border: 1px solid #008000;
+    color: #008000;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.actividadTb  button{
+    background-color: #03c1b7;
+    border: 0px;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border-radius: 15px;
+}
+.actividadTb  button:hover {
+    /*Para el cursor el hover*/
+    background-color: #fff;
+    border: 1px solid #ff5714;
+    color: #008000;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.btnVolver  , .btnRegistrarAc   {
+    background-color: #ffb1b1;
+    border: 0px;
+    height: 30px;
+    width: 100px;
+    color: #000000;
+    border-radius: 10px;
+}
+.btnVolver:hover,
+.btnRegistrarAc:hover {
+    /*Para el cursor el hover*/
+    background-color: #fff;
+    border: 1px solid #008000;
+    color: #008000;
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+

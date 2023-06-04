@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Gestion de estudiantes</title>
 </head>
 
 <body>
     <header>
-        <h1>Gestion de estudiantes</h1>
+        <h1 class="titulo">Gestion de estudiantes</h1>
     </header>
     <main>
 
         <section>
-            <button id="btnRegistrar">Registrar estudiante</button>
-        </section>
-        <section>
-            <table id="estudianteTb">
+            <table id="estudianteTb" class="estudianteTb">
                 <thead>
                     <tr>
                         <th>Codigo</th>
@@ -34,26 +32,44 @@
                 </tbody>
             </table>
         </section>
+        <br>
+        <section>
+            <button id="btnRegistrar" class="btnRegistrar">Registrar estudiante</button>
+        </section>
+        <br>
         <section>
             <h3 id="titulo">IMPORTANTE: Asignar una función antes al botón guardar</h3>
-            <form>
-                <label>
-                    <span>Codigo: </span>
-                    <input type="number" maxlength="200" name="codigo" id="codigoId" required>
-                </label>
-                <label>
-                    <span>Nombre: </span>
-                    <input type="text" maxlength="150" name="nombres" id="nombreId" required>
-                </label>
-                <label>
-                    <span>Apellido: </span>
-                    <input type="text" maxlength="200" name="apellidos" id="apellidoId" required>
-                </label>
-                <section>
-                    <br>
-                    <button id="btnGuardar" type="button">Guardar</button>
-                </section>
-            </form>
+            <br>
+            <section class="contentSect">
+                <form class="principalform">
+                    <div>
+                        <div class="contenedor">
+                            <label>
+                                <span>Codigo: </span>
+                                <input type="number" maxlength="200" name="codigo" id="codigoId" required>
+                            </label>
+                        </div>
+                        <div class="contenedor">
+                            <label>
+                                <span>Nombre: </span>
+                                <input type="text" maxlength="150" name="nombres" id="nombreId" required>
+                            </label>
+                        </div>
+                        <div class="contenedor">
+                            <label>
+                                <span>Apellido: </span>
+                                <input type="text" maxlength="200" name="apellidos" id="apellidoId" required>
+                            </label>
+                        </div>
+                        <section>
+                            <br>
+                            <div class="btnGuardar">
+                                <button id="btnGuardar" type="button">Guardar</button>
+                            </div>
+                        </section>
+                    </div>
+                </form>
+            </section>
         </section>
     </main>
     <!-- Para trabajar con jquery -->

@@ -4,35 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/notas.css">
     <title>Ingreso de Actividades</title>
 </head>
 
 <body>
     <header>
-        <h1>Gestion de actividades</h1>
+        <h1 class="tituloNotas">Gestion de actividades</h1>
     </header>
     <main>
-        <label>
-            <span>Código:</span>
-            <input type="number" name="codigoEst" id="codigoEst" readonly>
-        </label>
-        <br>
-        <label>
-            <span>Nombre:</span>
-            <input type="text" name="nombresEst" id="nombreEst" readonly>
-        </label>
-        <br>
-        <label>
-            <span>Apellido:</span>
-            <input type="text" name="apellidoEst" id="apellidoEst" readonly>
-        </label>
-
+        <form class="notasform">
+            <label>
+                <span>Código:</span>
+                <input type="number" name="codigoEst" id="codigoEst" readonly>
+            </label>
+            <br>
+            <label>
+                <span>Nombre:</span>
+                <input type="text" name="nombresEst" id="nombreEst" readonly>
+            </label>
+            <br>
+            <label>
+                <span>Apellido:</span>
+                <input type="text" name="apellidoEst" id="apellidoEst" readonly>
+            </label>
+        </form>
         <section>
-            <button id="btnVolver">Volver</button>
-            <button id="btnRegistrarAc">Registrar Actividad</button>
+            <button id="btnVolver" class="btnVolver">Volver</button>
+            <br>
+            <!-- <button id="btnRegistrarAc" class="btnRegistrarAc">Registrar Actividad</button> -->
         </section>
         <section>
-            <table id="actividadTb">
+            <table id="actividadTb" class="actividadTb">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -45,27 +48,37 @@
                 <tbody>
                 </tbody>
             </table>
+            <section>
+                <button id="btnRegistrarAc" class="btnRegistrarAc">Registrar Actividad</button>
+
+            </section>
         </section>
         <section>
             <h3 id="titulo">IMPORTANTE: Asignar una función antes al botón guardar</h3>
-            <form>
-                <label>
-                    <span>Descripción: </span>
-                    <input type="text" maxlength="200" name="descripcion" id="descripcionId" required>
-                </label>
-                <label>
-                    <span>Nota: </span>
-                    <input type="number" maxlength="150" name="nota" id="notaId" min="0" max="5" required>
-                </label>
-                <section>
-                    <br>
-                    <button id="btnGuardarAc" type="button">Guardar</button>
-                </section>
+            <p id="promedio"></p>
+            <form class="notasForm">
+                <div>
+                    <div class="contenedor">
+                        <label>
+                            <span>Descripción: </span>
+                            <input type="text" maxlength="200" name="descripcion" id="descripcionId" required>
+                        </label>
+                    </div>
+                    <div class="contenedor">
+                        <label>
+                            <span>Nota: </span>
+                            <input type="number" maxlength="150" name="nota" id="notaId" min="0" max="5" required>
+                        </label>
+                    </div>
+                    <section>
+                        <br>
+                        <div class="btnGuardar">
+                            <button id="btnGuardarAc" type="button">Guardar</button>
+                        </div>
+                    </section>
+                </div>
             </form>
-
         </section>
-        <p id="promedio"></p>
-
     </main>
     <!-- Para trabajar con jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
