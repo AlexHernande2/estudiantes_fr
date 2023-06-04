@@ -55,7 +55,7 @@ $(document).ready(function () {
         codigoBuscar = $(this).data("codigo");
         var nombres = $(this).closest("tr").find("td:eq(1)").text(); //TR = Fila, TD = celda
         var apellidos = $(this).closest("tr").find("td:eq(2)").text();
-        
+
         $("#codigoId").val(codigoBuscar);
         //muestra el codigo pero soamente como lectrua 
         $("#codigoId").prop("readonly", true);
@@ -159,5 +159,22 @@ $(document).ready(function () {
         document.getElementById("apellidoId").value = apellidos;
 
     };
+
+    $(document).on("click", ".btnNotas", function () {
+        codigoBuscar = $(this).data("codigo");
+        let nombres = $(this).closest("tr").find("td:eq(1)").text();
+        let apellidos = $(this).closest("tr").find("td:eq(2)").text();
+        // Almacena los valores en localStorage
+        localStorage.setItem("codigo", codigoBuscar);
+        localStorage.setItem("nombres", nombres);
+        localStorage.setItem("apellidos", apellidos);
+
+        // Redirigir a notas
+        window.location.href = "notas.html";
+
+    });
+
+
+
 
 });

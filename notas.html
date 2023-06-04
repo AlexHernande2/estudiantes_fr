@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ingreso de Actividades</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion de actividades</h1>
+    </header>
+    <main>
+        <label>
+            <span>Código:</span>
+            <input type="number" name="codigoEst" id="codigoEst" readonly>
+        </label>
+        <br>
+        <label>
+            <span>Nombre:</span>
+            <input type="text" name="nombresEst" id="nombreEst" readonly>
+        </label>
+        <br>
+        <label>
+            <span>Apellido:</span>
+            <input type="text" name="apellidoEst" id="apellidoEst" readonly>
+        </label>
+
+        <section>
+            <button id="btnVolver">Volver</button>
+            <button id="btnRegistrarAc">Registrar Actividad</button>
+        </section>
+        <section>
+            <table id="actividadTb">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Descripción</th>
+                        <th>Nota</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3 id="titulo">IMPORTANTE: Asignar una función antes al botón guardar</h3>
+            <form>
+                <label>
+                    <span>Descripción: </span>
+                    <input type="text" maxlength="200" name="descripcion" id="descripcionId" required>
+                </label>
+                <label>
+                    <span>Nota: </span>
+                    <input type="number" maxlength="150" name="nota" id="notaId" min="0" max="5" required>
+                </label>
+                <section>
+                    <br>
+                    <button id="btnGuardarAc" type="button">Guardar</button>
+                </section>
+            </form>
+
+        </section>
+        <p id="promedio"></p>
+
+    </main>
+    <!-- Para trabajar con jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/notaEstudiante.js"></script>
+
+</body>
+
+</html>
